@@ -1,0 +1,32 @@
+{
+  "name": "unsliced-split-chunk-name-utils",
+  "version": "1.0.0",
+  "description": "Function to use in the name prop of webpack's optimize split chunks, in order to have same behaviour of 'name===true' without 100 char slice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamikazePT/unsliced-split-chunk-name-utils.git"
+  },
+  "keywords": [
+    "webpack4",
+    "dependency",
+    "JSON",
+    "webpack",
+    "file",
+    "list"
+  ],
+  "author": "Afonso Santos aka kamikazePT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kamikazePT/unsliced-split-chunk-name-utils/issues"
+  },
+  "homepage": "https://github.com/kamikazePT/unsliced-split-chunk-name-utils#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "lodash.isnil": "^4.0.0",
+    "path": "^0.12.7"
+  }
+}
