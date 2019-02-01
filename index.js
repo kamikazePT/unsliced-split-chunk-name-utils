@@ -1,4 +1,4 @@
-module.exports = ({ automaticNameDelimiter }) => {
+module.exports = ({ automaticNameDelimiter, automaticNamePrefix }) => {
   const cache = new WeakMap();
   const fn = (_module, chunks, cacheGroup) => {
     let cacheEntry = cache.get(chunks);
@@ -14,7 +14,7 @@ module.exports = ({ automaticNameDelimiter }) => {
       return;
     }
     names.sort();
-    const prefix = cacheGroup;
+    const prefix = typeof automaticNamePrefix === "string" ? automaticNamePrefix : cacheGroup;
     const namePrefix = prefix ? prefix + automaticNameDelimiter : "";
     const name = namePrefix + names.join(automaticNameDelimiter);
     
